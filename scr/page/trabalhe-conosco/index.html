@@ -7,15 +7,99 @@
     <meta description="Site de teste">
     <title>Trabalhe conosco</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
     <h1>Trabalhe conosco</h1>
-    <a href="../../../">Home</a>
-    <a href="../sobre/">Sobre</a>
-    <a href="../contato/">Contato</a>
-    <!-- <a href="../trabalhe-conosco/index.html">Trabalhe conosco</a> -->
+    <nav>
+        <a href="../../../">Home</a>
+        <a href="../sobre/">Sobre</a>
+        <a href="../contato/">Contato</a>
+        <!-- <a href="../trabalhe-conosco/index.html">Trabalhe conosco</a> -->
+    </nav>
 
+    <form action="" id="jobForm">
+        <!-- Dados pessoais --INICIO-- -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="fullName">Nome Completo:</label>
+                <input type="text" name="fullName" id="txtFullName" placeholder="Nome Completo" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="txtEmail" required autocomplete="false">
+            </div>
+        </fieldset>
+        <!-- Dados pessoais --FIM-- -->
+
+        <!-- COMO SOUBE DA VAGA --INICIO-- -->
+        <Fieldset>
+            <legend>Como soube da vaga</legend>
+            <div>
+                <input type="checkbox" name="check-one" id="check-one" value="linkedin">
+                <label for="check-one">Linkedin</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="check-two" id="check-two" value="site">
+                <label for="check-two">Site da Empresa</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="check-three" id="check-three" value="indicacao">
+                <label for="check-three">Indicação</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="check-four" id="check-four" value="outros">
+                <label for="check-four">Outros</label>
+            </div>
+        </Fieldset>
+        <!-- COMO SOUBE DA VAGA --FIM-- -->
+
+
+        <!-- VAGA DE INTERESSE --INICIO --  -->
+        <Fieldset>
+            <Legend>Vaga de Interesse</Legend>
+            <div>
+                <label for="VAGA">Selecione a vaga</label>
+                <select name="vaga" id="vaga" required>
+                    <option value="" disabled selected>Escolha uma opção</option>
+                    <option value="frontend">Desenvolvedor Front-end</option>
+                    <option value="backend">Desenvolvedor Back-end</option>
+                    <option value="uiux">Design UI e UX</option>
+                    <option value="gerente">Gerente de Projetos</option>
+                </select>
+            </div>
+        </Fieldset>
+
+        <!-- VAGA DE INTERESSE --FIM --  -->
+        <Fieldset>
+            <legend>Vaga de Interesse</legend>
+            <div>
+                <input type="radio" name="vagaInteresse" id="radVagaInteresseA" value="vagaA">
+                <label for="vagaInteresse">Vaga A</label>
+            </div>
+
+            <div>
+                <input type="radio" name="vagaInteresse" id="radVagaInteresseA" value="vagaB">
+                <label for="vagaInteresse">Vaga B</label>
+            </div>
+
+            <div>
+                <input type="radio" name="vagaInteresse" id="radVagaInteresseA" value="vagaC">
+                <label for="vagaInteresse">Vaga C</label>
+            </div>
+        </Fieldset>
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
+    <!-- <script type="text/javascript" src="/scripts/script.js"></script> -->
+    <script type="text/javascript" src="../../scripts/script.js"></script>
 </body>
 
 </html>
